@@ -84,6 +84,11 @@ function colorCard(dataset){
         //colour
         cardColor.classList.add('text-white','bg-secondary')
     }if(condi.includes('rain')){
+        //overlay
+        imgOver[0].src = 'https://thumbs.gfycat.com/AdorableBrownEuropeanfiresalamander-size_restricted.gif'
+        imgOver[0].style.display = 'block'
+        overlay.classList.add('card-img-overlay')
+        //colour
         cardColor.classList.add('text-white','bg-info')
     }if(condi.includes('Sun')){
         //overlay
