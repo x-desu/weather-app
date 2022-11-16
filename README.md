@@ -1,3 +1,3 @@
 # weather-app
 ---
-[weather](https://weatherapp.ic.fleek.co)
+[weather](https://weatherapp.on.fleek.co)
