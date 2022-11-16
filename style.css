@@ -1,0 +1,58 @@
+.container{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.form-group{
+    width: 60%;
+}
+
+.banner{
+
+    color: #FFD23F;
+
+}
+/* 
+#city-input{
+    margin: 0 auto;
+    max-width: 450px;
+} */
+
+#weather-output{
+    min-width: 50vw;
+}
+
+.card-header{
+    min-height: 60px;
+}
+
+.card-deck{
+    max-width: 460px;
+    min-width: 300px;   
+}
+
+.header-image{
+    animation: time 2s ease-in-out  forwards;
+}
+
+@keyframes time {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+img.card-img{
+    display: none;
+}
+
+div.card-img-overlay{
+    top:15%;
+    
+}
