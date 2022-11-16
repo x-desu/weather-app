@@ -69,13 +69,22 @@ const dataFunc = (dataset)=>{
 const overlay = document.getElementById('overlay')
 overlay.classList.remove('card-img-overlay')
 const imgOver = document.getElementsByClassName('card-img')
+
 //color card
 function colorCard(dataset){
+    imgOver[0].src = ''
+    imgOver[0].style.display = 'none'
+    overlay.classList.remove('card-img-overlay')
     let condi = dataset.current.condition.text
     const cardColor = document.getElementById('colour-card')
-    cardColor.classList.remove('bg-light','text-white','bg-secondary','text-white','bg-info','text-white','bg-warning','text-dark')
+    cardColor.classList.remove('bg-light','text-white','bg-secondary','text-white','bg-info','text-white','bg-warning','text-dark','text-secondary')
     if(condi.includes('cloud')){
-        cardColor.classList.add('bg-light')
+        //overay 
+        imgOver[0].src = 'https://i.gifer.com/vF.gif'
+        imgOver[0].style.display = 'block'
+        overlay.classList.add('card-img-overlay')
+        //colour
+        cardColor.classList.add('bg-light','text-dark')
     }if(condi.includes('Overcast')){
         //overlay
         imgOver[0].src = 'https://media.tenor.com/4BvWavRPqU8AAAAd/sky-clouds.gif'
