@@ -54,5 +54,5 @@ img.card-img{
 
 div.card-img-overlay{
     top:15%;
-    
+    min-height: 350px;
 }
