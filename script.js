@@ -107,6 +107,14 @@ function colorCard(dataset){
 
         cardColor.classList.add('text-dark','bg-warning')
         
+    }if(condi.includes('snow')){
+        //overlay
+        imgOver[0].src = 'https://media.tenor.com/JqtKFAzQqoUAAAAM/shibe-snow.gif'
+        imgOver[0].style.display = 'block'
+        overlay.classList.add('card-img-overlay')
+
+        //color
+        
     }
 }
 
