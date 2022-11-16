@@ -50,6 +50,8 @@
 
 img.card-img{
     display: none;
+    min-height: 350px;
+    object-fit: cover;
 }
 
 div.card-img-overlay{
