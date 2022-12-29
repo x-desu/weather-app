@@ -119,6 +119,7 @@ function colorCard(dataset){
     if(condi.includes('Fog')){
         imgOver[0].src = 'https://media.tenor.com/zRn-Yv1HGvcAAAAC/foggy-scooby.gif'
         imgOver[0].style.display = 'block'
+        overlay.classList.add('card-img-overlay')
     }
 }
 
