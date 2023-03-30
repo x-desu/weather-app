@@ -138,7 +138,7 @@ const input = document.getElementById('city-input')
 //input by user 
 function inputVal(){
     
-    
+    const input = document.getElementById('city-input')
     userCity = (input.value).replace(' ','%20')
     
     api()
