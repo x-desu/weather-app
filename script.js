@@ -126,15 +126,13 @@ function colorCard(dataset){
 //search button click event
 const searchBtn = document.getElementById('search-btn')
 searchBtn.addEventListener('click',inputVal)
-	
-    
 
 //input by user 
 function inputVal(){
-    
     const input = document.getElementById('city-input')
-    userCity = (input.value).replace(' ','%20')
     
+    userCity = (input.value).replace(' ','%20')
+    console.log(userCity)
     api()
    
 
