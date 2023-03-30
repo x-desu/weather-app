@@ -132,7 +132,12 @@ function inputVal(){
     const input = document.getElementById('city-input')
     
     userCity = (input.value).replace(' ','%20')
-    console.log(userCity)
+    if(userCIty) {
+    	input.addEventListener('keydown', function(event) {
+  	if (event.keyCode === 13) {
+		api()
+	}
+    }
     api()
    
 
